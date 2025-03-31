@@ -5,8 +5,9 @@ html {
 body {
     color: #ffffff;
     font-family: Neuton;
-    font-size: 70px; 
+    font-size: 50px; 
     text-decoration: none;
+    position: relative;
 }
 
 /* plan!! have the text slide in from the left like a staircase. last line is different font and center aligned*/
@@ -16,42 +17,70 @@ body {
     color: #76b3f8;
 
     animation-name: aniOne;
-    animation-duration:6s;
-    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    }
+    animation-fill-mode: forwards;
+}
 
 @keyframes aniOne {
-    from {transform: translate(-1500px);}
-    to {transform: translate(0px);}
+    from {transform: translate(-1500px); opacity: 1%}
+    to {transform: translate(100px); opacity: 100%}
 }
 
 
 
 #lineTwo {
     color: #76b3f8;
+    opacity: 0%; /*i'm actually rlly happy with this solution, since i wanted a staggered effect to the text motion, i made the starting text all opacity 0% so it looks like they're coming from off screen :D*/
 
     animation-name: aniTwo;
-    animation-duration:6s;
-    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    }
+    animation-fill-mode: forwards;
+}
 
 @keyframes aniTwo {
-    from {transform: translate(-1500px);}
-    to {transform: translate(0px);}
-    
-    
+    from {transform: translate(-1500px); opacity: 1%;}
+    to {transform: translate(250px); opacity: 100%;}
 }
+
 
 #lineThree {
     color: #76b3f8;
+    opacity: 0%; 
+
+    animation-name: aniThree;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniThree {
+    from {transform: translate(-1500px); opacity: 1%;}
+    to {transform: translate(400px); opacity: 100%;}
 }
 
 #lineFour {
     color: #76b3f8;
+    font-family: Caveat;
+    font-size: 100px;
+    text-align: center;
+    opacity: 0%; 
+
+    animation-name: aniFour;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-a.link {
-    text-decoration: none;
+@keyframes aniFour {
+    from {transform: translate(-1500px); opacity: 1%;}
+    to {transform: translate(center); opacity: 100%;}
 }
