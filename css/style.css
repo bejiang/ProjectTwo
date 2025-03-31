@@ -5,5 +5,53 @@ html {
 body {
     color: #ffffff;
     font-family: Neuton;
-    font-size: 90px; 
+    font-size: 70px; 
+    text-decoration: none;
+}
+
+/* plan!! have the text slide in from the left like a staircase. last line is different font and center aligned*/
+/*trying?? animations? ough, timing is weird*/
+
+#lineOne {
+    color: #76b3f8;
+
+    animation-name: aniOne;
+    animation-duration:6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    }
+
+@keyframes aniOne {
+    from {transform: translate(-1500px);}
+    to {transform: translate(0px);}
+}
+
+
+
+#lineTwo {
+    color: #76b3f8;
+
+    animation-name: aniTwo;
+    animation-duration:6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    }
+
+@keyframes aniTwo {
+    from {transform: translate(-1500px);}
+    to {transform: translate(0px);}
+    
+    
+}
+
+#lineThree {
+    color: #76b3f8;
+}
+
+#lineFour {
+    color: #76b3f8;
+}
+
+a.link {
+    text-decoration: none;
 }

@@ -7,3 +7,25 @@ body {
     font-family: Neuton;
     font-size: 90px; 
 }
+
+#lineOne {
+    color: #cbf9ff;
+}
+
+#lineTwo {
+    color: #cbf9ff;
+}
+
+#lineThree {
+    color: #cbf9ff;
+}
+
+a.link {
+    text-decoration: none;
+}
+
+#credits {
+    color: #0044ff;
+    text-align: right;
+    font-size: 30px;
+}

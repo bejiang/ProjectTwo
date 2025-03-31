@@ -7,3 +7,19 @@ body {
     font-family: Neuton;
     font-size: 90px; 
 }
+
+#lineOne {
+    color: #cee5ff;
+}
+
+#lineTwo {
+    color: #95c4fa;
+}
+
+#lineThree {
+    color: #95c4fa;
+}
+
+a.link {
+    text-decoration: none;
+}
