@@ -1,22 +1,125 @@
 html {
-    background-image: linear-gradient(to right, #0b23a8 , #1971d6);
+    background-image: linear-gradient(to right, #0b23a8, #4593ec); /*horizontal gradient for this page*/
 }
 
 body {
-    color: #ffffff;
+    position: relative;
     font-family: Neuton;
-    font-size: 90px; 
+    font-size: 50px; 
+
+    text-align: center;
+    margin-top: 100px;
 }
 
 #lineOne {
-    color: #cee5ff;
+    color: #dafbff;
+        
+    opacity: 0%;
+
+
+    transform: translate(-20px); /*bit more margin space*/
+
+    animation-name: aniOne;
+    animation-duration: 2s; /*dont need delay*/
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes aniOne {
+    from {transform: translate(0px, -80px); opacity: 0%;}
+    to {transform: translate(0px, 0px); opacity: 100%;}
 }
 
 #lineTwo {
-    color: #95c4fa;
+    color: #7eb4f3;
+    margin-top: 100px;
+    opacity: 0%;
+
+
+    transform: translate(-20px); /*bit more margin space*/
+
+    animation-name: aniTwo;
+    animation-duration: 1s;
+    animation-delay:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
+
+@keyframes aniTwo {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
 
 #lineThree {
-    color: #95c4fa;
+    color: #dafbff;
+    margin-top: 100px;
+    opacity: 0%;
+
+
+    transform: translate(-20px); /*bit more margin space*/
+
+    animation-name: aniThree;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
+
+@keyframes aniThree {
+    from {transform: translate(0px, 300px); opacity: 0%;}
+    to {transform: translate(0px, 0px); opacity: 100%;}
+
+}
+
+
+.fear { /*span works to split a word off from the rest of the line!! :D*/
+    font-family: Shadows Into Light;
+    font-weight: 600;
+    color: #8b1515;
+
+    animation-name: aniFear;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes aniFear { /*meant to have the feeling of a rapid heartbeat*/
+    0% {color: #8b1515;}
+    20% {color: #be2a43;}
+    40% {color: #8b1515;}
+    50% {color: #be2a43;} /*stutter for a bit of unsteadiness + 'something's off' feeling :)*/
+    60% {color: #8b1515;}
+    80% {color: #8d061d;}
+    100% {color: #be2a43;}
+
+}
+
+#lineThree a {
+    color: #000000;
+    animation-name: aniEnd;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes aniEnd { /*meant to have the feeling of a rapid heartbeat*/
+    0% {opacity: 100%;}
+    50% {opacity: 10%;}
+    100% {opacity: 100%;}
+}

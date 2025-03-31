@@ -1,31 +1,152 @@
 html {
-    background-image: linear-gradient(to right, #1971d6 , #23b1f3);
+    background-image: linear-gradient(to right, #4593ec , #2858db);
 }
 
 body {
-    color: #ffffff;
+    position: relative;
     font-family: Neuton;
-    font-size: 90px; 
+    font-size: 50px; 
+
+    
+    margin-top: 80px;
 }
 
+/*mirror page one, text slides in from right. credits + looping link fades in at end. opacity animation?*/
+
 #lineOne {
-    color: #cbf9ff;
+    color: #83cdf8;
+    opacity: 0%;
+    margin-top: 70px;
+    text-align: right;
+
+    animation-name: aniOne;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniOne {
+    from {transform: translate(1500px); opacity: 1%}
+    to {transform: translate(-100px); opacity: 100%}
 }
 
 #lineTwo {
-    color: #cbf9ff;
+    color: #bde7ff;
+    opacity: 0%; 
+    margin-top: 70px;
+    text-align: right;
+    
+    animation-name: aniTwo;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniTwo {
+    from {transform: translate(1500px); opacity: 1%;}
+    to {transform: translate(-250px); opacity: 100%;}
 }
 
 #lineThree {
-    color: #cbf9ff;
+    color: #ffffff;
+    margin-top: 70px;
+    font-family: Caveat;
+    font-size: 100px;
+    text-align: center; /*need this*/
+    opacity: 0%; 
+
+    animation-name: aniThree;
+    animation-duration: 3s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
-a.link {
-    text-decoration: none;
+@keyframes aniThree {
+    from {transform: translate(1500px); opacity: 1%;}
+    to {transform: translate(center); opacity: 100%;}
 }
+
+
+
+#lineThree a {
+    color: #ffffff;
+    text-decoration-thickness: 2px;
+}
+
 
 #credits {
-    color: #0044ff;
+    color: #00195e;
     text-align: right;
+    font-family: Offside;
     font-size: 30px;
+    
+    opacity: 0%;
+
+
+    transform: translate(-20px); /*bit more margin space*/
+
+    animation-name: aniCred;
+    animation-duration: 2s;
+    animation-delay:8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
+
+@keyframes aniCred {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+#loopLink {
+    text-align: right;
+    font-family: Silkscreen;
+    font-size: 25px;
+    opacity: 0%;
+    
+    transform: translate(-20px);
+
+    animation-name: aniLoop;
+    animation-duration: 2s;
+    animation-delay: 9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes aniLoop {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+#loopLink a {
+    color: #e4faff;
+}
+
+
+
+.alone {
+    animation-name: aniAlone;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes aniAlone { /*meant to have the feeling of a rapid heartbeat*/
+    0% {opacity: 100%;}
+    50% {opacity: 5%;}
+    100% {opacity: 100%;}
+}
+

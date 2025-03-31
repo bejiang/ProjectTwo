@@ -1,20 +1,22 @@
 html {
-    background-image: linear-gradient(to right, #061568 , #0b23a8);
+    background-image: linear-gradient(to right, #030d49 , #0b23a8);
 }
 
 body {
-    color: #ffffff;
     font-family: Neuton;
     font-size: 50px; 
     text-decoration: none;
     position: relative;
+
+    margin-top: 80px;
 }
 
 /* plan!! have the text slide in from the left like a staircase. last line is different font and center aligned*/
 /*trying?? animations? ough, timing is weird*/
 
 #lineOne {
-    color: #76b3f8;
+    color: #3f95f7;
+    margin-top: 70px;
 
     animation-name: aniOne;
     animation-duration: 3s;
@@ -31,7 +33,8 @@ body {
 
 
 #lineTwo {
-    color: #76b3f8;
+    color: #68abf8;
+    margin-top: 70px;
     opacity: 0%; /*i'm actually rlly happy with this solution, since i wanted a staggered effect to the text motion, i made the starting text all opacity 0% so it looks like they're coming from off screen :D*/
 
     animation-name: aniTwo;
@@ -49,7 +52,8 @@ body {
 
 
 #lineThree {
-    color: #76b3f8;
+    color: #83bbfa;
+    margin-top: 70px;
     opacity: 0%; 
 
     animation-name: aniThree;
@@ -66,10 +70,11 @@ body {
 }
 
 #lineFour {
-    color: #76b3f8;
+    color: #96b3f8;
+    margin-top: 100px;
     font-family: Caveat;
     font-size: 100px;
-    text-align: center;
+    text-align: center; /*need this*/
     opacity: 0%; 
 
     animation-name: aniFour;
@@ -78,9 +83,15 @@ body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
 }
 
 @keyframes aniFour {
     from {transform: translate(-1500px); opacity: 1%;}
     to {transform: translate(center); opacity: 100%;}
+}
+
+#lineFour a {
+    color: #b3c7f7;
+    text-decoration-thickness: 2px;
 }
