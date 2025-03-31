@@ -1,0 +1,9 @@
+html {
+    background-image: linear-gradient(to right, #061568 , #0b23a8);
+}
+
+body {
+    color: #ffffff;
+    font-family: Neuton;
+    font-size: 90px; 
+}
