@@ -15,3 +15,5 @@ I used the song "Blessed Mesiah and the Tower of Ai", by ひとしずくP  (Hito
 
 
 # acknowledgment
+pastel rainbow hex codes from Coolors 
+https://colorkit.co/palette/ffadad-ffd6a5-fdffb6-caffbf-9bf6ff-a0c4ff-bdb2ff-ffc6ff/
