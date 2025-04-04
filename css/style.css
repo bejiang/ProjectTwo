@@ -95,3 +95,21 @@ body {
     color: #b3c7f7;
     text-decoration-thickness: 2px;
 }
+
+.littleHands {
+    color: #eeafaf;
+    display: inline-block; /*this. line. is. necessary.*/
+
+    animation-name: aniLittle;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes aniLittle {
+    from {transform: scale(1);}
+    to {transform: scale(.6);}
+}
