@@ -12,6 +12,7 @@ I used the song "Blessed Mesiah and the Tower of Ai", by ひとしずくP  (Hito
 
 
 # technical overview
+This project consists of three pages hosted on Github. Lyrics from the song "Blessed Mesiah and the Tower of Ai", by ひとしずくP  (Hitoshizuku P) are displayed across these pages with animations added to various sections. Links are included to connect the pages with the final link on the third page bringing viewers back to the beginning.
 
 
 # acknowledgment
